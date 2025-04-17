@@ -1,0 +1,106 @@
+@use "../abstracts" as *;
+
+.auth {
+  width: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f2f2f2;
+  position: relative;
+
+  &__container {
+    margin: 20px 0px;
+    width: 95%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.25);
+
+    @include breakpoint(sm) {
+      margin: 40px 0px;
+      padding: 100px;
+    }
+
+    @include breakpoint(md) {
+      margin: 60px 0px;
+    }
+
+    @include breakpoint(lg) {
+      margin: 100px 0px;
+    }
+  }
+
+  &__title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 10px;
+
+    @include breakpoint(lg) {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__input__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+
+    label {
+      margin-bottom: 2px;
+      font-size: small;
+
+      @include breakpoint(lg) {
+        font-size: medium;
+      }
+    }
+
+    input {
+      height: 40px;
+      padding-left: 10px;
+      border-radius: 15px;
+      border: 1px solid color("gray", 300);
+    }
+    textarea {
+      height: 100px;
+      padding: 10px 20px;
+      border-radius: 15px;
+      border: 1px solid color("gray", 300);
+    }
+  }
+
+  &__navigation {
+    font-size: small;
+    width: 100%;
+    margin-top: 10px;
+
+    span {
+      cursor: pointer;
+      color: color("blue", 600);
+    }
+
+    @include breakpoint(lg) {
+      font-size: medium;
+    }
+  }
+
+  &__checkbox {
+    width: 100%;
+    margin-bottom: 20px;
+
+    label {
+      margin-left: 10px;
+    }
+  }
+
+  &__legal {
+    margin-top: 20px;
+    font-size: x-small;
+  }
+}

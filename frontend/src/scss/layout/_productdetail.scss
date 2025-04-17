@@ -1,0 +1,210 @@
+@use "../abstracts/" as *;
+
+.productDetailPage {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  flex-direction: column;
+
+  &__mainImg {
+    width: 80%;
+    height: 40vw;
+    object-fit: cover;
+  }
+
+  &__imgPagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    width: 100%;
+
+    img {
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      object-fit: cover;
+      cursor: pointer;
+
+      @include breakpoint("md") {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &--selected {
+      border: 2px solid black;
+    }
+
+    &--notSelected {
+      border: 2px solid color("gray", 200);
+    }
+  }
+
+  &__price {
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    margin-right: 10px;
+
+    @include breakpoint("md") {
+      font-size: 35px;
+    }
+  }
+
+  &__pricesContainer {
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  &__addCart {
+    display: flex;
+    align-items: center;
+  }
+
+  &__description {
+    width: 80%;
+    margin-top: 80px;
+
+    h1 {
+      font-size: 1rem;
+      font-weight: 700;
+      @include breakpoint("md") {
+        font-size: 2rem;
+      }
+    }
+    p {
+      margin-top: 10px;
+      font-size: 0.8rem;
+      font-weight: 400;
+      @include breakpoint("md") {
+        font-size: 1.2rem;
+      }
+    }
+  }
+}
+
+.product_detail_descriptions {
+  width: 100%;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product_detail_title {
+  width: 80%;
+  font-size: 1rem;
+  font-weight: 700;
+
+  @include breakpoint("md") {
+    font-size: 35px;
+  }
+}
+
+.product_detail_rating {
+  width: 80%;
+  margin-top: 10px;
+}
+
+.product_detail_description {
+  margin-top: 100px;
+  width: 80%;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.product_detail_reviews {
+  width: 80%;
+  margin-top: 100px;
+
+  h1 {
+    font-size: 1rem;
+    font-weight: 700;
+
+    @include breakpoint("md") {
+      font-size: 2rem;
+    }
+  }
+
+  &:last-of-type {
+    margin-bottom: 200px;
+  }
+}
+
+.product_detail_reviews_details {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  label {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-bottom: 10px;
+
+    @include breakpoint("md") {
+      font-size: 1.5rem;
+    }
+  }
+  select {
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    max-width: 400px;
+    background-color: white;
+  }
+  textarea {
+    border-radius: 20px;
+    padding: 20px;
+  }
+}
+
+.submit_reviews {
+  width: 150px;
+  height: 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: black;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product_detail_reviews_comment {
+  padding: 20px 0px;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 500;
+  border-bottom: 1px solid gainsboro;
+
+  div:last-child {
+    margin-top: 15px;
+    font-weight: 600;
+  }
+}
+
+.product_detail_comment__title {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+
+  @include breakpoint("md") {
+    font-size: 1.2rem;
+  }
+}
+
+.product_detail_comment_paragraph {
+  font-size: 0.6rem;
+
+  @include breakpoint("md") {
+    font-size: 1rem;
+  }
+}

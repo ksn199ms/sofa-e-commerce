@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+
+.divider__container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 10px 0px;
+
+  h1 {
+    font-size: small;
+    margin: 0px 10px;
+
+    @include breakpoint(lg) {
+      font-size: medium;
+    }
+  }
+}

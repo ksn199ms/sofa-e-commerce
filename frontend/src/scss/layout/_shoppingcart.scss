@@ -1,0 +1,116 @@
+@use "../abstracts/" as *;
+
+.shoppingCart {
+  width: 100%;
+  padding: 0px 20px;
+  min-height: 80vh;
+
+  @include breakpoint("md") {
+    padding: 0px 40px;
+  }
+
+  @include breakpoint("lg") {
+    padding: 0px 50px;
+  }
+
+  &__title {
+    font-size: 1rem;
+    font-weight: 700;
+
+    @include breakpoint("md") {
+      font-size: 2rem;
+    }
+
+    @include breakpoint("lg") {
+      font-size: 3rem;
+    }
+  }
+
+  &__container {
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+
+    @include breakpoint("md") {
+      font-size: 1rem;
+    }
+  }
+}
+
+.cart_listing {
+  margin-top: 20px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.cart_listing > * {
+  display: flex;
+  align-items: center;
+}
+
+.cart_listing__image {
+  width: 80px;
+  height: 50px;
+  margin-right: 20px;
+  object-fit: cover;
+  cursor: pointer;
+
+  @include breakpoint("sm") {
+    width: 150px;
+    height: 120px;
+  }
+}
+
+.cart_listing__text {
+  width: 100%;
+  justify-content: center;
+  font-size: 0.5rem;
+  font-weight: 500;
+
+  @include breakpoint("sm") {
+    font-size: 1rem;
+    width: 150px;
+    height: 120px;
+  }
+}
+
+.cart_listing__remove {
+  width: 100%;
+  font-size: 0.5rem;
+  font-weight: 500;
+  justify-content: center;
+  color: red;
+  cursor: pointer;
+
+  @include breakpoint("sm") {
+    font-size: 1rem;
+    width: 150px;
+    height: 120px;
+  }
+}
+
+.cart_checkout {
+  width: 100%;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+
+  &__subtotal {
+    font-size: 1rem;
+
+    @include breakpoint("lg") {
+      font-size: 1.5rem;
+    }
+  }
+
+  &__itemsCount {
+    font-size: 1rem;
+    @include breakpoint("lg") {
+      font-size: 1.5rem;
+    }
+  }
+}
