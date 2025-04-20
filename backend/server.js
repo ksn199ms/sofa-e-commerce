@@ -21,6 +21,7 @@ const allowedOrigins = [
   // "http://127.0.0.1:3000",
   "http://localhost:3000",
   "https://checkout.stripe.com",
+  "https://sofa-e-commerce.onrender.com",
 ];
 
 server.use(cors({ origin: allowedOrigins }));
