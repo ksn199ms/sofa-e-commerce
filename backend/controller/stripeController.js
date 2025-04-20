@@ -38,9 +38,9 @@ const stripeCheckOut = async (req, res) => {
         allowed_countries: ["US", "CA"],
       },
       shipping_options: [
-        { shipping_rate: "shr_1M5U3aASzu4JHJRJbIkd0YTd" },
-        { shipping_rate: "shr_1M5U3xASzu4JHJRJkNjh3dS4" },
-        { shipping_rate: "shr_1M5U4HASzu4JHJRJeKKgwQ22" },
+        { shipping_rate: "shr_1RFuf5FKzucOp2bl63flMDz4" },
+        { shipping_rate: "shr_1RFufdFKzucOp2bl9pnsfUmf" },
+        { shipping_rate: "shr_1RFufzFKzucOp2blTnBjgf6y" },
       ],
       metadata: metaDatas,
     });
