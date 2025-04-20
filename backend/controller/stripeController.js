@@ -21,7 +21,7 @@ const stripeCheckOut = async (req, res) => {
           unit_amount: parseFloat(item.price),
         },
         quantity: item.qty,
-        tax_rates: ["txr_1M5U3JASzu4JHJRJUZ2jqb2M"],
+        tax_rates: ["txr_1RFuXoFKzucOp2blECiWQqkn"],
       });
       metaDatas[`orderItems_${index}`] = JSON.stringify(item);
     });
