@@ -193,7 +193,7 @@ const deleteProductById = async (req, res) => {
     if (products) {
       // first delete img in AWS
       for (let i = 0; i < products.images.length; i++) {
-        let imageFileName = products.images[i].split("https://xxx/images/")[1];
+        let imageFileName = products.images[i].split("https://sofa-mart.s3.eu-north-1.amazonaws.com/images/")[1];
         const params = {
           Bucket: process.env.AWS_BUCKET_NAME,
           Key: `images/${imageFileName}`,
@@ -286,7 +286,7 @@ const updateProduct = async (req, res) => {
 
         // delete all old images
         for (let i = 0; i < product.images.length; i++) {
-          let imageFileName = product.images[i].split("https://xxx/images/")[1];
+          let imageFileName = product.images[i].split("https://sofa-mart.s3.eu-north-1.amazonaws.com/images/")[1];
           const params = {
             Bucket: process.env.AWS_BUCKET_NAME,
             Key: `images/${imageFileName}`,
@@ -310,7 +310,7 @@ const updateProduct = async (req, res) => {
           };
           const command = new PutObjectCommand(params);
           await s3.send(command);
-          images.push("https://xxx/images/" + imageName);
+          images.push("https://sofa-mart.s3.eu-north-1.amazonaws.com/images/" + imageName);
         }
       }
 
@@ -342,12 +342,12 @@ const createProductReview = async (req, res) => {
     const { rating, comment } = req.body;
     const product = await Product.findById(req.params.id);
     if (product) {
-      // const alreadyReviewed = product.reviews.find(
-      //   (r) => r.user.toString() === req.user._id.toString()
-      // );
-      // if (alreadyReviewed) {
-      //   throw new Error("Product Already Reviewed");
-      // }
+      const alreadyReviewed = product.reviews.find(
+        (r) => r.user.toString() === req.user._id.toString()
+      );
+      if (alreadyReviewed) {
+        throw new Error("Product Already Reviewed");
+      }
       const review = {
         user: req.user._id,
         name: req.user.name,
