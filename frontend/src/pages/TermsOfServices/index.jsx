@@ -4,11 +4,6 @@ export default function index() {
   return (
     <div className="legal">
       <h1>Terms and Conditions</h1>
-      <p>Last updated: March 13, 2023</p>
-      <p>
-        Please read these terms and conditions carefully before using Our
-        Service.
-      </p>
       <h1>Interpretation and Definitions</h1>
       <h2>Interpretation</h2>
       <p>
@@ -38,7 +33,7 @@ export default function index() {
           <p>
             <strong>Company</strong> (referred to as either &quot;the
             Company&quot;, &quot;We&quot;, &quot;Us&quot; or &quot;Our&quot; in
-            this Agreement) refers to Stable.
+            this Agreement) refers to city sofa mart.
           </p>
         </li>
         <li>
@@ -71,24 +66,6 @@ export default function index() {
             or content (including data, information, products or services)
             provided by a third-party that may be displayed, included or made
             available by the Service.
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>Website</strong> refers to Stable, accessible from{" "}
-            <a
-              href="https://stable-e-commerce.up.railway.app"
-              rel="external nofollow noopener"
-            >
-              https://stable-e-commerce.up.railway.app
-            </a>
-          </p>
-        </li>
-        <li>
-          <p>
-            <strong>You</strong> means the individual accessing or using the
-            Service, or the company, or other legal entity on behalf of which
-            such individual is accessing or using the Service, as applicable.
           </p>
         </li>
       </ul>
@@ -143,7 +120,7 @@ export default function index() {
       </p>
       <h1>Information We Collect and Usage</h1>
       <p>
-        When you sign up for a Stable Account, we ask for identifying
+        When you sign up for a city sofa mart Account, we ask for identifying
         information such as your name, username, email address, and password to
         provide you with a safe, customized, and efficient experience. We use a
         JSON Web Token (JWT)-token for user authentication in our website. The
@@ -337,14 +314,14 @@ export default function index() {
         account without prior notice.
       </p>
       <h1>Copyright Notice</h1>
-      <p>Copyright © 2023 Haopeng Zeng. All rights reserved.</p>
+      <p>Copyright © 2025 mubashir. All rights reserved.</p>
       <h1>Contact Us</h1>
       <p>
         If you have any questions about these Terms and Conditions, You can
         contact us:
       </p>
       <ul>
-        <li>By email: haopeng.zeng234@gmail.com</li>
+        <li>By email: example@gmail.com</li>
       </ul>
     </div>
   );

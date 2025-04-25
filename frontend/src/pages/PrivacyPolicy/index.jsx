@@ -4,16 +4,6 @@ export default function index() {
   return (
     <div className="privacy">
       <h1>Privacy Policy</h1>
-      <p>Last updated: March 13, 2023</p>
-      <h2>
-        At Stable, accessible at www.stable-store.com, one of our main
-        priorities is the privacy of our visitors. This Privacy Policy document
-        contains types of information that is collected and recorded by Stable
-        and how we use it. If you have additional questions or require more
-        information about our Privacy Policy, do not hesitate to contact us
-        through email at haopeng.zeng234@gmail.com. We promise we never sell
-        your data.
-      </h2>
       <h1>General Overview</h1>
       <h2>
         By accepting the following terms, you consent to our use and disclosure
@@ -25,7 +15,7 @@ export default function index() {
       </h2>
       <h1>Information We Collect and Usage</h1>
       <h2>
-        When you sign up for a Stable Account, we ask for identifying
+        When you sign up for a city sofa mart Account, we ask for identifying
         information such as your name, username, email address, and password to
         provide you with a safe, customized, and efficient experience. We use a
         JSON Web Token (JWT)-token for user authentication in our website. The
@@ -63,8 +53,8 @@ export default function index() {
         personal information and to reduce the risk of loss, misuse,
         unauthorized access, disclosure, or modification of personal
         information. You should be aware that any information transmitted
-        electronically via the World Wide Web might not be 100% secure. Stable,
-        and its developer Haopeng Zeng assumes no liability for the loss of any
+        electronically via the World Wide Web might not be 100% secure. city sofa mart,
+        and its developer mubashir assumes no liability for the loss of any
         information that you transmit to us via the World Wide Web. Most data
         are not encrypted while they live in our database, but your account
         passwords are encrypted before they are stored in our database.
@@ -110,10 +100,10 @@ export default function index() {
         Protection Regulation (GDPR)
       </h1>
       <h2>
-        If you are from the European Economic Area (EEA), Stable legal basis for
+        If you are from the European Economic Area (EEA), city sofa mart legal basis for
         collecting and using the personal information described in this Privacy
         Policy depends on the Personal Data we collect and the specific context
-        in which we collect it. Stable may process your Personal Data because:
+        in which we collect it. city sofa mart may process your Personal Data because:
         You have given us permission to do so The processing is in our
         legitimate interests and it is not overridden by your rights To comply
         with the law
@@ -124,7 +114,7 @@ export default function index() {
       </h1>
       <h2>
         If you are a resident of the European Economic Area (EEA), you have
-        certain data protection rights. Stable aims to take reasonable steps to
+        certain data protection rights. city sofa mart aims to take reasonable steps to
         allow you to correct, amend, delete or limit the use of your Personal
         Data. If you wish to be informed about what Personal Data we hold about
         you and if you want it to be removed from our systems, please contact
@@ -141,7 +131,7 @@ export default function index() {
         The right to data portability: You have the right to be provided with a
         copy of the information we have on you in a structured, machine-readable
         and commonly used format. The right to withdraw consent: You also have
-        the right to withdraw your consent at any time where Stable relied on
+        the right to withdraw your consent at any time where city sofa mart relied on
         your consent to process your personal information. Please note that we
         may ask you to verify your identity before responding to such requests.
         You have the right to complain to a Data Protection Authority about our
@@ -167,7 +157,7 @@ export default function index() {
       <h2>
         Have any questions, comments, or concerns about this privacy policy,
         your data, or your rights with respect to your information? Please get
-        in touch by emailing us at haopeng.zeng234@gmail.com and we'll be happy
+        in touch by emailing us at example@gmail.com and we'll be happy
         to try to answer them!
       </h2>
       <h1>Adapted from the Basecamp open-source policies / CC BY 4.0</h1>

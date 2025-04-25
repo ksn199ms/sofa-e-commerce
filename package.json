@@ -1,5 +1,5 @@
 {
-  "name": "stable",
+  "name": "city-sofa-mart",
   "version": "1.0.0",
   "description": "eCommerce Website for furniture built using MERN Stack",
   "main": "server.js",
@@ -12,7 +12,7 @@
     "data:destroy": "node backend/seeder -d",
     "build": "cd frontend && npm install && npm run build"
   },
-  "author": "Haopeng Zeng",
+  "author": "mubashir",
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-s3": "^3.204.0",

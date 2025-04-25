@@ -1,7 +1,7 @@
 import React from "react";
 import NavigationText from "./NavigationText";
-import BrandIcon from "./BrandIcon";
 import { useNavigate } from "react-router-dom";
+import logo from "../../../assets/icons/brand-logo.png";
 
 export default function HeaderLeftMenu() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ export default function HeaderLeftMenu() {
 
   return (
     <div className="header__container">
-      <BrandIcon onClick={() => navigateHandler("/")} />
+      <img src={logo} height={90} width={150} alt="city sofa mart" onClick={() => navigateHandler("/") } />
       <NavigationText text={"Home"} url="/" />
       <NavigationText text={"New Arrivals"} url="/newarrivals" />
       <NavigationText text={"All Products"} url="/shop" />
